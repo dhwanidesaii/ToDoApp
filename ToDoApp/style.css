@@ -1,0 +1,129 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #caf0f8;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: "Quicksand", sans-serif;
+}
+
+.app-container {
+  text-align: center;
+  padding: 40px 20px;
+  width: 100%;
+  max-width: 960px;
+}
+
+h1 {
+  color: #023e8a;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.input-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+input,
+select {
+  padding: 10px;
+  font-size: 15px;
+  border: 2px solid #0077b6;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  padding: 10px 16px;
+  background-color: #0077b6;
+  border: 2px solid #0077b6;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+button:hover {
+  background-color: #023e8a;
+}
+
+#notesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.sticky-note {
+  background: #e0f7ff; /* Soft blue */
+  padding: 20px;
+  width: 240px;
+  min-height: 200px;
+  border-radius: 12px;
+  box-shadow: 4px 4px 18px rgba(0, 0, 0, 0.2);
+  border: 2px dashed #00b4d8; /* Blue border */
+  position: relative;
+  text-align: left;
+  transition: 0.3s;
+}
+
+.sticky-note h3 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #0077b6;
+  border-bottom: 1px solid #0096c7;
+  padding-bottom: 6px;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+  background-color: #d0f0fa; /* Light blue task box */
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #90e0ef;
+  font-size: 15px;
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.1);
+}
+
+.task-item.completed {
+  text-decoration: line-through;
+  background-color: #b5ead7;
+  color: gray;
+}
+
+
+.task-actions button {
+  background-color: #ffd43b;
+  border: 1px solid #fab005;
+  border-radius: 6px;
+  padding: 5px 7px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 6px;
+  transition: 0.2s;
+}
+
+.task-actions button:hover {
+  background-color: #fab005;
+}
+
+.tag-label {
+  font-size: 12px;
+  font-style: italic;
+  color: #0077b6;
+  margin-top: 3px;
+}
+
